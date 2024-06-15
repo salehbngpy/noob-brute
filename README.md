@@ -10,6 +10,7 @@ apt install git
 ```
 git clone https://github.com/salehbngpy/noob-brute.git
 ```
+```
 cd noob-brute
 ```
 pip install -r install.py
