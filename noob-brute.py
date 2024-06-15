@@ -28,3 +28,4 @@ def write_passwords_and_enter():
 
 
 write_passwords_and_enter()
+pr("[green]""the end password list""[/green]")
