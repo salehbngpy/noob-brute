@@ -1,5 +1,6 @@
 # noob-brute
 script bullshit for brute force attack
+
 in the termux and android not supported
 ------------------------------------
 installing in linux :
