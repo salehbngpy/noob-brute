@@ -14,7 +14,7 @@ git clone https://github.com/salehbngpy/noob-brute.git
 cd noob-brute
 ```
 ```
-pip install -r install.py
+pip install -r install.txt
 ```
 ```
 python noob-brute.py
