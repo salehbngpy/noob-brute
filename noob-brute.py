@@ -31,6 +31,5 @@ def main():
     write_passwords_and_enter()
     pr("[green]""Noob Brute Ran Succesfully""[/green]")
 
-# Used to prevent running from imports
 if __name__ == "__main__":
     main()
