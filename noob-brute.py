@@ -13,7 +13,7 @@ pr("""[magenta]
 ██║░╚███║╚█████╔╝╚█████╔╝██████╦╝  ██████╦╝██║░░██║╚██████╔╝░░░██║░░░███████╗
 ╚═╝░░╚══╝░╚════╝░░╚════╝░╚═════╝░  ╚═════╝░╚═╝░░╚═╝░╚═════╝░░░░╚═╝░░░╚══════╝[/magenta]""")
 print("\n")
-pr("[red]""Made by : salehBNG\nTelegram : @SalehBNG0 \n -----------------------""[/red]")
+pr("[red]""Made by : salehBNG\nGithub : github.com/salehbngpy \n -----------------------""[/red]")
 print("\n")
 passwords = open(input("Enter your password list (File name): "))
 
